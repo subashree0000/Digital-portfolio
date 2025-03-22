@@ -9,51 +9,42 @@
             padding: 0;
             background-color: #84a6e9;
         }
-
         header {
             background-color: #941919;
             color: #fff;
             text-align: center;
             padding: 2rem 0;
-            position: relative; /* Add this */
+            position: relative;
         }
-
         .header-content h1 {
             font-size: 2.5rem;
         }
-
-        /* Add styles for the round profile picture */
         .profile-picture {
-            width: 100px; /* Adjust the size as needed */
+            width: 100px;
             height: 100px;
-            border-radius: 75%; /* Create a circular shape */
-            object-fit: cover; /* To ensure the image fills the circular area */
-            position: absolute; /* Add this */
-            top: 75px; /* Adjust top position as needed */
-            left: 75px; /* Adjust left position as needed */
+            border-radius: 75%;
+            object-fit: cover;
+            position: absolute;
+            top: 75px;
+            left: 75px;
         }
-
         nav {
             background-color: #333;
             color: #fff;
             text-align: center;
         }
-
         nav ul {
             list-style-type: none;
             padding: 0;
         }
-
         nav ul li {
             display: inline;
             margin: 0 20px;
         }
-
         nav ul li a {
             text-decoration: none;
             color: #fff;
         }
-
         .section-content {
             background-color: #fff;
             padding: 2rem;
@@ -62,7 +53,6 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: justify;
         }
-
         .download-button {
             background-color: #333;
             color: #fff;
@@ -73,18 +63,15 @@
             margin-top: 10px;
             align-self: center;
         }
-
         .download-button:hover {
             background-color: #555;
         }
-
         footer {
             text-align: center;
             padding: 1rem 0;
             background-color: #333;
             color: #fff;
         }
-
         ul {
             list-style-type: disc;
             padding-left: 20px;
@@ -94,10 +81,9 @@
 <body>
     <header>
         <div class="header-content">
-            <!-- Add your profile picture here -->
-            <img src="profile.jpg"Your Profile Picture" class="profile-picture">
-            <h1>Swathi priya </h1>
-            <p>Aiming to Become a software Developer</p>
+            <img src="/storage/emulated/0/subashree.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h1>Subashree E</h1>
+            <p>Am student</p>
         </div>
     </header>
 
@@ -108,26 +94,27 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#resume">Resume</a></li>
-           
         </ul>
     </nav>
 
     <section id="about">
         <div class="section-content">
             <h2>About Me</h2>
-            <p>Im a new trainee working on my skills and communicationto become a developer .
-                This is the start of my career. In school and collage I joined coding competions 
-                and was a school people leader . I know basics of HTML and CSS , and Im learning
-                 Java script.</p>             
+            <p>
+                I'm a <b>software development</b>. I am a passionate and driven computer science 
+                student with a strong interest in software development, data structures, and algorithms.
+                I have experience with multiple programming languages including Python, Java, and C++,
+                and am always eager to learn new technologies and tools. In addition to academic projects,
+                I enjoy participating in coding challenges and contributing to open-source initiatives.
+            </p>
         </div>
     </section>
 
     <section id="education">
         <div class="section-content">
             <h2>Education</h2>
-            <p>school- Sri Raghavendra vidyalaya Matriculation higher secondary school; currently pursuing B.sc Computer science (2nd year) at bishop appaswamy collage of arts and science </p>
-            
-            
+            <p>Rajalakshmi Gengusamy Matriculation Higher Secondary School</p>
+            <p>Bishop Appasamy College of Arts and Science</p>
         </div>
     </section>
 
@@ -135,9 +122,12 @@
         <div class="section-content">
             <h2>Skills</h2>
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>javaScript ( learning )</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>JavaScript</li>
             </ul>
         </div>
     </section>
@@ -146,37 +136,34 @@
         <div class="section-content">
             <h2>Projects</h2>
             <ul>
-                <li><a href="#">making a project for you</a></li>
-                <li><a href="#">Getting demond using GitHub </a></li>
-                <!-- Add more project links here -->
+                <li><a href="#">E Cart Website</a></li>
+                <li><a href="#">Cloud Security IBM</a></li>
+                <li><a href="#">IBM Chatbot</a></li>
+                <li><a href="#">College Portal</a></li>
             </ul>
         </div>
     </section>
 
     <section id="resume">
-    
         <div class="section-content">
             <center>
-            <h2>Resume</h2>
-            <a href="https://drive.google.com/file/d/1J95Q3X7YvYqua67BYUj7nlrMTlfroKPs/view?usp=drivesdk"</a>
-        </center>
+                <h2>Resume</h2>
+                <a href="/Resume"
+                   target="_blank" class="download-button">Download CV</a>
+            </center>
         </div>
-        
     </section>
 
     <footer>
-        <p>&copy; 2025 Swathi priya </p>
+        <p>&copy; 2025 Subashree E</p>
     </footer>
 
     <script>
-        // Smooth scrolling to section when clicking on navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-
                 const targetId = this.getAttribute('href').substring(1);
                 const targetElement = document.getElementById(targetId);
-
                 if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop,
